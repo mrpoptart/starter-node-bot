@@ -37,6 +37,11 @@ controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
 controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message) {
   bot.reply(message, '( o )( o )')
 })
+})
+
+controller.hears(['dick', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'penis', 'dong'], ['ambient'], function (bot, message) {
+  bot.reply(message, '8' + Array(Math.floor(Math.random() * 10)).join("=") + '>')
+})
 
 controller.hears('.*', ['direct_message'], function (bot, message) {
   bot.reply(message, "I'm more of a group bot.")
