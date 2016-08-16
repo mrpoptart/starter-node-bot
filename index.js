@@ -42,6 +42,10 @@ controller.hears(['dick', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'penis', 'don
 	bot.reply(message, '8' + Array(Math.floor(Math.random() * 10)).join("=") + '>')
 })
 
+controller.hears(['vag', 'cunt', 'snatch'], ['ambient'], function (bot, message) {
+	bot.reply(message, '({|})')
+})
+
 controller.hears('.*', ['direct_message'], function (bot, message) {
 	bot.reply(message, "I'm more of a group bot.")
 })
