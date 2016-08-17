@@ -38,11 +38,11 @@ controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message)
 	bot.reply(message, '( o )( o )')
 })
 
-controller.hears(['dick', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'penis', 'dong'], ['ambient'], function (bot, message) {
+controller.hears(['dick', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'penis', 'dong', 'pud', 'weiner', 'rod'], ['ambient'], function (bot, message) {
 	bot.reply(message, '8' + Array(Math.floor(Math.random() * 10)).join("=") + '>')
 })
 
-controller.hears(['vag', 'cunt', 'snatch'], ['ambient'], function (bot, message) {
+controller.hears(['vag', 'cunt', 'snatch', 'pussy', 'twat', 'hairy hatchet wound'], ['ambient'], function (bot, message) {
 	bot.reply(message, '({|})')
 })
 
