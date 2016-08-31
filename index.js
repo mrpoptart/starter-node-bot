@@ -52,10 +52,6 @@ controller.hears(['vag', 'cunt', 'snatch', 'pussy', 'twat', 'hairy hatchet wound
 	bot.reply(message, '({|})')
 })
 
-controller.hears(['testing'], ['ambient'], function (bot, message) {
-	bot.reply(message, '```testing\ntesting```')
-})
-
 controller.hears('.*', ['direct_message'], function (bot, message) {
 	bot.reply(message, "I'm more of a group bot.")
 })
