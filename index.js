@@ -36,7 +36,7 @@ controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
 
 controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message) {
 	var spaces = Array(Math.floor(Math.random() * 3)).join(" ")
-	var nip = ['@', '.', 'o', '•'][Math.floor(Math.random() * 5]
+	var nip = ['@', '.', 'o', '•'][Math.floor(Math.random() * 5)]
 	bot.reply(message, '('+spaces+nip+spaces+')('+spaces+nip+spaces+')')
 })
 
@@ -50,6 +50,10 @@ controller.hears(['dick', 'peen', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'peni
 
 controller.hears(['vag', 'cunt', 'snatch', 'pussy', 'twat', 'hairy hatchet wound', 'beef curtains', 'vajay', 'hoohah'], ['ambient'], function (bot, message) {
 	bot.reply(message, '({|})')
+})
+
+controller.hears(['testing'], ['ambient'], function (bot, message) {
+	bot.reply(message, '```testing\ntesting```')
 })
 
 controller.hears('.*', ['direct_message'], function (bot, message) {
