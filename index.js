@@ -44,7 +44,7 @@ controller.hears(['huge dick', 'big dick', 'giant dick', 'enormous dick'], ['amb
 	bot.reply(message, '8======================>')
 })
 
-controller.hears(['dick', 'peen', 'cock', 'shaft', 'pud', 'shaft', 'wang', 'penis', 'dong', 'pud', 'weiner', 'rod'], ['ambient'], function (bot, message) {
+controller.hears(['dick', 'peen', 'cock', 'shaft', 'pud', 'wang', 'penis', 'dong', 'pud', 'weiner', 'rod'], ['ambient'], function (bot, message) {
 	bot.reply(message, '8' + Array(Math.floor(Math.random() * 10)).join("=") + '>')
 })
 
