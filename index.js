@@ -38,7 +38,9 @@ controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message)
 	var spaces = Array(Math.floor(Math.random() * 3)).join(" ")
 	var nips = ['@', '.', 'o', 'O', '•', '°', 'ø'];
 	var nip = nips[Math.floor(Math.random() * nips.length)]
-	bot.reply(message, '('+spaces+nip+spaces+')('+spaces+nip+spaces+')')
+	var cleavages = [')(', 'Y', '⅄', 'ㅅ'];
+	var cleavage = cleavages[Math.floor(Math.random() * cleavages.length)]
+	bot.reply(message, '('+spaces+nip+spaces+cleavage+spaces+nip+spaces+')')
 })
 
 controller.hears(['huge dick', 'big dick', 'giant dick', 'enormous dick'], ['ambient'], function (bot, message) {
