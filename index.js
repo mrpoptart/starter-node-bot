@@ -36,7 +36,8 @@ controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
 
 controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message) {
 	var spaces = Array(Math.floor(Math.random() * 3)).join(" ")
-	var nip = ['@', '.', 'o', 'O'][Math.floor(Math.random() * 5)]
+	var nips = ['@', '.', 'o', 'O', '•', '°', 'ø'];
+	var nip = nips[Math.floor(Math.random() * nips.length)]
 	bot.reply(message, '('+spaces+nip+spaces+')('+spaces+nip+spaces+')')
 })
 
