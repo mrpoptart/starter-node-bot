@@ -36,7 +36,7 @@ controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
 
 controller.hears(['boob', 'tit', 'hooter'], ['ambient'], function (bot, message) {
 	var spaces = Array(Math.floor(Math.random() * 2) + 2).join(' ')
-	var nips = ['@', '.', 'o', 'O', '•', '°', 'ø'];
+	var nips = ['@', '.', 'o', 'O', '•', '°', 'ø', '⊙'];
 	var nip = nips[Math.floor(Math.random() * nips.length)]
 	var cleavages = [')(', 'Y', '⅄', 'ㅅ'];
 	var cleavage = cleavages[Math.floor(Math.random() * cleavages.length)]
